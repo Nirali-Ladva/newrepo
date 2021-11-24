@@ -12,10 +12,11 @@ const optionss = [
   { icon: <CheckIcon />, label: "CheckSquare" },
 ];
 
-export const CustomDropdown = (props = { id: "", option: [] }) => {
+export const CustomDropdown = (props = { id: "",name: "", option: [] }) => {
   return (
     <Autocomplete
       id={props.id}
+      name={props.name}
       className="dropdown"
       options={props.option}
       autoHighlight
